@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Water_Flat.obj-f8699ebdee2a4d1e6aa8928afcd62cdf.mesh"
+
+[deps]
+
+files=[ "res://.import/Water_Flat.obj-f8699ebdee2a4d1e6aa8928afcd62cdf.mesh" ]
+
+source_file="res://Assets/modular_terrain_collections/Modular Terrain Hilly/Water_Flat.obj"
+dest_files=[ "res://.import/Water_Flat.obj-f8699ebdee2a4d1e6aa8928afcd62cdf.mesh", "res://.import/Water_Flat.obj-f8699ebdee2a4d1e6aa8928afcd62cdf.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

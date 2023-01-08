@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Level/LevelGenerator/FGShaderMaterial.tres" type="Material" id=1]
+[ext_resource path="res://Assets/kenney_natureKit_2.1/Models/GLTF format/tree_pineDefaultA.glb" type="PackedScene" id=2]
+[ext_resource path="res://Assets/kenney_natureKit_2.1/Models/GLTF format/tree_pineDefaultB.glb" type="PackedScene" id=3]
+[ext_resource path="res://Assets/FBX-20230107T081000Z-001/FBX/Tree1.fbx" type="PackedScene" id=4]
+[ext_resource path="res://Assets/FBX-20230107T081000Z-001/FBX/Tree2.fbx" type="PackedScene" id=5]
+[ext_resource path="res://Assets/FBX-20230107T081000Z-001/FBX/Tree3.fbx" type="PackedScene" id=6]
+[ext_resource path="res://Assets/FBX-20230107T081000Z-001/FBX/Tree4.fbx" type="PackedScene" id=7]
+
+[node name="CSGBox" type="CSGBox"]
+use_collision = true
+width = 0.001
+height = 0.001
+depth = 0.001
+material = ExtResource( 1 )
+
+[node name="tree_pineDefaultA" parent="." instance=ExtResource( 2 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+visible = false
+
+[node name="Tree1" parent="." instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 3, 0, 0, 0, 2, 0, -0.125001, 0 )
+
+[node name="tree_pineDefaultB" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0 )
+visible = false
+
+[node name="Tree2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0966, -15.9515, 2.67743 )
+visible = false
+
+[node name="Tree3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -33.4217, -18.3085, -3.84272 )
+visible = false
+
+[node name="Tree4" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.5859, -27.3719, -2.2575 )
+visible = false

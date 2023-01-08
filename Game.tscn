@@ -1,0 +1,216 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://scenes/KinematicBody.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Game.gd" type="Script" id=2]
+[ext_resource path="res://Level/LevelGenerator/NavMap1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Drops/Dropper.gd" type="Script" id=4]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Spawning/Spawner.gd" type="Script" id=6]
+[ext_resource path="res://addons/scatter/demos/assets/lighting/lighting.tscn" type="PackedScene" id=7]
+[ext_resource path="res://codes/camera_script.gd" type="Script" id=8]
+[ext_resource path="res://Level/LevelGenerator/GeneratedLevels/New Level6.tscn" type="PackedScene" id=9]
+[ext_resource path="res://HUD/hud_theme.tres" type="Theme" id=10]
+[ext_resource path="res://HUD/HUD.gd" type="Script" id=11]
+[ext_resource path="res://Level/LevelGenerator/NavMap2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Level/LevelGenerator/GeneratedLevels/New Level7.tscn" type="PackedScene" id=13]
+[ext_resource path="res://HUD/WeaponSelector/WeaponSelector.gd" type="Script" id=14]
+[ext_resource path="res://Weapons/Guns/Shotgun.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Weapons/Guns/Pistol.tscn" type="PackedScene" id=16]
+
+[sub_resource type="CylinderShape" id=1]
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 50, 1, 50 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[node name="Game" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0906525, -1.03067, 1.21109 )
+script = ExtResource( 2 )
+levels = [ ExtResource( 3 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 13 ) ]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+collision_layer = 2
+collision_mask = 1
+
+[node name="BoneAttachment" parent="Player/Body/rimi/Armature/Skeleton" index="7"]
+transform = Transform( 8.92448e-07, -1, -6.70551e-08, 1, 1.47773e-06, -2.50283e-07, 9.59332e-07, 1.04308e-07, 1, -185.25, -12.1038, -299.94 )
+
+[node name="Stats" parent="Player" index="4"]
+max_HP = 50
+
+[node name="Axis" type="Spatial" parent="."]
+script = ExtResource( 8 )
+inverse_y = true
+target = NodePath("../Player")
+
+[node name="Camera" type="Camera" parent="Axis"]
+transform = Transform( -1, -3.21964e-14, -8.74228e-08, -2.23274e-08, 0.966837, 0.255395, 8.45235e-08, 0.255395, -0.966837, 0, 4.65005, -4.55048 )
+fov = 72.1
+
+[node name="Dropper" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+script = ExtResource( 4 )
+
+[node name="PickUpArea" type="Area" parent="Dropper"]
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dropper/PickUpArea"]
+shape = SubResource( 1 )
+
+[node name="Spawner" type="Spatial" parent="."]
+script = ExtResource( 6 )
+Enemy = ExtResource( 5 )
+
+[node name="Timer" type="Timer" parent="Spawner"]
+
+[node name="Void" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Void"]
+shape = SubResource( 2 )
+
+[node name="HUD" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+theme = ExtResource( 10 )
+script = ExtResource( 11 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD"]
+anchor_bottom = 1.0
+margin_right = 135.0
+custom_constants/separation = 65
+
+[node name="GridContainer" type="GridContainer" parent="HUD/VBoxContainer"]
+margin_right = 300.0
+margin_bottom = 70.0
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelLabel" type="Label" parent="HUD/VBoxContainer/GridContainer"]
+margin_right = 91.0
+margin_bottom = 33.0
+text = "LEVEL: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LevelValue" type="Label" parent="HUD/VBoxContainer/GridContainer"]
+margin_left = 95.0
+margin_right = 112.0
+margin_bottom = 33.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaveLabel" type="Label" parent="HUD/VBoxContainer/GridContainer"]
+margin_top = 37.0
+margin_right = 91.0
+margin_bottom = 70.0
+text = "WAVE: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaveValue" type="Label" parent="HUD/VBoxContainer/GridContainer"]
+margin_left = 95.0
+margin_top = 37.0
+margin_right = 112.0
+margin_bottom = 70.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WeaponSelector" type="ItemList" parent="HUD/VBoxContainer"]
+margin_top = 135.0
+margin_right = 300.0
+margin_bottom = 545.0
+rect_min_size = Vector2( 300, 0 )
+focus_mode = 0
+mouse_default_cursor_shape = 2
+size_flags_vertical = 3
+custom_styles/bg = SubResource( 3 )
+fixed_icon_size = Vector2( 64, 64 )
+script = ExtResource( 14 )
+weapon_inventory = [ ExtResource( 16 ), ExtResource( 15 ) ]
+
+[node name="GridContainer2" type="GridContainer" parent="HUD/VBoxContainer"]
+margin_top = 610.0
+margin_right = 300.0
+margin_bottom = 680.0
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthLabel" type="Label" parent="HUD/VBoxContainer/GridContainer2"]
+margin_right = 112.0
+margin_bottom = 33.0
+text = "HEALTH: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthValue" type="Label" parent="HUD/VBoxContainer/GridContainer2"]
+margin_left = 116.0
+margin_right = 133.0
+margin_bottom = 33.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AmmoLabel" type="Label" parent="HUD/VBoxContainer/GridContainer2"]
+margin_top = 37.0
+margin_right = 112.0
+margin_bottom = 70.0
+text = "AMMO: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AmmoValue" type="Label" parent="HUD/VBoxContainer/GridContainer2"]
+margin_left = 116.0
+margin_top = 37.0
+margin_right = 133.0
+margin_bottom = 70.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lighting" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 18, 18 )
+
+[node name="DirectionalLight" parent="Lighting" index="1"]
+transform = Transform( -0.251777, 0.955068, -0.156376, -0.070188, 0.143135, 0.987211, 0.965237, 0.259533, 0.0309961, 5, 20.5137, 0 )
+light_energy = 1.583
+light_indirect_energy = 1.098
+shadow_enabled = true
+
+[connection signal="ammo_update" from="Player/GunController" to="HUD" method="_on_GunController_ammo_update"]
+[connection signal="update_health" from="Player/Stats" to="Player" method="_on_Stats_update_health"]
+[connection signal="update_health" from="Player/Stats" to="HUD" method="_on_Stats_update_health"]
+[connection signal="item_picked_up" from="Dropper" to="Player" method="_on_Dropper_item_picked_up"]
+[connection signal="item_picked_up" from="Dropper" to="HUD/VBoxContainer/WeaponSelector" method="_on_Dropper_item_picked_up"]
+[connection signal="body_entered" from="Dropper/PickUpArea" to="Dropper" method="_on_PickUpArea_body_entered"]
+[connection signal="drop_item" from="Spawner" to="Dropper" method="_on_Spawner_drop_item"]
+[connection signal="level_complete" from="Spawner" to="." method="_on_Spawner_level_complete"]
+[connection signal="wave_update" from="Spawner" to="HUD" method="_on_Spawner_wave_update"]
+[connection signal="timeout" from="Spawner/Timer" to="Spawner" method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Void" to="Player" method="_on_Void_body_entered"]
+[connection signal="item_selected" from="HUD/VBoxContainer/WeaponSelector" to="HUD/VBoxContainer/WeaponSelector" method="_on_WeaponSelector_item_selected"]
+[connection signal="weapon_selected" from="HUD/VBoxContainer/WeaponSelector" to="Player" method="_on_WeaponSelector_weapon_selected"]
+
+[editable path="Player"]
+[editable path="Player/Body"]
+[editable path="Lighting"]

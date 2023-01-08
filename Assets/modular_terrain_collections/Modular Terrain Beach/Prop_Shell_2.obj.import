@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Shell_2.obj-a98d0cc3e243274d084c406e423b5a3e.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Shell_2.obj-a98d0cc3e243274d084c406e423b5a3e.mesh" ]
+
+source_file="res://Assets/modular_terrain_collections/Modular Terrain Beach/Prop_Shell_2.obj"
+dest_files=[ "res://.import/Prop_Shell_2.obj-a98d0cc3e243274d084c406e423b5a3e.mesh", "res://.import/Prop_Shell_2.obj-a98d0cc3e243274d084c406e423b5a3e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

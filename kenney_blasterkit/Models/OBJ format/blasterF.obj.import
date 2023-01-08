@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/blasterF.obj-8e0f08a3b6fddf1a3d6d79fab0a5e6fe.mesh"
+
+[deps]
+
+files=[ "res://.import/blasterF.obj-8e0f08a3b6fddf1a3d6d79fab0a5e6fe.mesh" ]
+
+source_file="res://kenney_blasterkit/Models/OBJ format/blasterF.obj"
+dest_files=[ "res://.import/blasterF.obj-8e0f08a3b6fddf1a3d6d79fab0a5e6fe.mesh", "res://.import/blasterF.obj-8e0f08a3b6fddf1a3d6d79fab0a5e6fe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

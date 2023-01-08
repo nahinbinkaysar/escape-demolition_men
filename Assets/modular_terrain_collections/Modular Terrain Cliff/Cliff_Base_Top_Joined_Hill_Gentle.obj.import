@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Base_Top_Joined_Hill_Gentle.obj-1c6c32041fbec8738fc904ee4bbc8b59.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Base_Top_Joined_Hill_Gentle.obj-1c6c32041fbec8738fc904ee4bbc8b59.mesh" ]
+
+source_file="res://Assets/modular_terrain_collections/Modular Terrain Cliff/Cliff_Base_Top_Joined_Hill_Gentle.obj"
+dest_files=[ "res://.import/Cliff_Base_Top_Joined_Hill_Gentle.obj-1c6c32041fbec8738fc904ee4bbc8b59.mesh", "res://.import/Cliff_Base_Top_Joined_Hill_Gentle.obj-1c6c32041fbec8738fc904ee4bbc8b59.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

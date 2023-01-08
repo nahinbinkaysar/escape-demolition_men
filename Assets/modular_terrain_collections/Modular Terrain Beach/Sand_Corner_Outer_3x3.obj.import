@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Sand_Corner_Outer_3x3.obj-90a928d60eff9aa772ff68cddc29ad04.mesh"
+
+[deps]
+
+files=[ "res://.import/Sand_Corner_Outer_3x3.obj-90a928d60eff9aa772ff68cddc29ad04.mesh" ]
+
+source_file="res://Assets/modular_terrain_collections/Modular Terrain Beach/Sand_Corner_Outer_3x3.obj"
+dest_files=[ "res://.import/Sand_Corner_Outer_3x3.obj-90a928d60eff9aa772ff68cddc29ad04.mesh", "res://.import/Sand_Corner_Outer_3x3.obj-90a928d60eff9aa772ff68cddc29ad04.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

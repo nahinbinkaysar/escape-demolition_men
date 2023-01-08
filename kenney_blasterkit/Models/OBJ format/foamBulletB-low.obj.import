@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/foamBulletB-low.obj-98d6ae0db379988b86bfad45090eba7b.mesh"
+
+[deps]
+
+files=[ "res://.import/foamBulletB-low.obj-98d6ae0db379988b86bfad45090eba7b.mesh" ]
+
+source_file="res://kenney_blasterkit/Models/OBJ format/foamBulletB-low.obj"
+dest_files=[ "res://.import/foamBulletB-low.obj-98d6ae0db379988b86bfad45090eba7b.mesh", "res://.import/foamBulletB-low.obj-98d6ae0db379988b86bfad45090eba7b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

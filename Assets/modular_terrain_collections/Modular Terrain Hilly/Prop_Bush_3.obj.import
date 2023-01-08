@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Bush_3.obj-1c8956168cf8accfa8aa04ef183a920f.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Bush_3.obj-1c8956168cf8accfa8aa04ef183a920f.mesh" ]
+
+source_file="res://Assets/modular_terrain_collections/Modular Terrain Hilly/Prop_Bush_3.obj"
+dest_files=[ "res://.import/Prop_Bush_3.obj-1c8956168cf8accfa8aa04ef183a920f.mesh", "res://.import/Prop_Bush_3.obj-1c8956168cf8accfa8aa04ef183a920f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

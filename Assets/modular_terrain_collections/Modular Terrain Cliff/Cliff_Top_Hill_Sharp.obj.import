@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Top_Hill_Sharp.obj-8c173dd6bef474a7a94549e36b310966.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Top_Hill_Sharp.obj-8c173dd6bef474a7a94549e36b310966.mesh" ]
+
+source_file="res://Assets/modular_terrain_collections/Modular Terrain Cliff/Cliff_Top_Hill_Sharp.obj"
+dest_files=[ "res://.import/Cliff_Top_Hill_Sharp.obj-8c173dd6bef474a7a94549e36b310966.mesh", "res://.import/Cliff_Top_Hill_Sharp.obj-8c173dd6bef474a7a94549e36b310966.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

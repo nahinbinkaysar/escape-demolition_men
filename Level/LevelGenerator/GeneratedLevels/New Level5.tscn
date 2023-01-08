@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Level/LevelGenerator/NavigationMap.gd" type="Script" id=1]
+[ext_resource path="res://Spawning/Wave.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Level/LevelGenerator/Ground.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Level/LevelGenerator/Obstacle.tscn" type="PackedScene" id=4]
+
+[sub_resource type="NavigationMesh" id=1]
+vertices = PoolVector3Array( -0.2, 0.4, -10.4, -10.4, 0.4, -10.4, -10.4, 0.4, -0.2, -0.2, 0.4, 10.3, 10.3, 0.4, 10.3, 10.3, 0.4, -0.2, -10.4, 0.4, -0.2, -10.4, 0.4, 10.3, -0.2, 0.4, 10.3, 10.3, 0.4, -0.2, 10.3, 0.4, -10.4, -0.2, 0.4, -10.4 )
+polygons = [ PoolIntArray( 1, 0, 2 ), PoolIntArray( 2, 0, 5 ), PoolIntArray( 2, 5, 3 ), PoolIntArray( 3, 5, 4 ), PoolIntArray( 8, 7, 6 ), PoolIntArray( 11, 10, 9 ) ]
+
+[node name="Navigation" type="Navigation"]
+script = ExtResource( 1 )
+obstacle_map = [ [ false, true, false, false, false, false, false, false, false, false, false, false, false, false, true ], [ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, true, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, false, false, false, true, false, false, false, false, false, true, false ], [ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, false, true, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, true, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, true, false, false, false, false, false, false, false, false, false, false, false, true, false ], [ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, false, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, true, false, false, false, false, false, false, false, false, false, false ], [ false, false, false, false, false, false, false, false, false, false, true, false, false, false, false ] ]
+map_width = 15
+map_depth = 15
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="."]
+navmesh = SubResource( 1 )
+
+[node name="Ground" parent="NavigationMeshInstance" instance=ExtResource( 3 )]
+width = 30.0
+depth = 30.0
+
+[node name="CSGBox" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.545298, 12 )
+height = 1.0906
+
+[node name="CSGBox2" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.810221, 0 )
+height = 1.62044
+
+[node name="CSGBox3" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.816551, -6 )
+height = 1.6331
+
+[node name="CSGBox4" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.518038, 12 )
+height = 1.03608
+
+[node name="CSGBox5" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.793789, 14 )
+height = 1.58758
+
+[node name="CSGBox6" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.7252, -12 )
+height = 1.4504
+
+[node name="CSGBox7" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.875403, -12 )
+height = 1.75081
+
+[node name="CSGBox8" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.792914, -10 )
+height = 1.58583
+
+[node name="CSGBox9" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.65705, -6 )
+height = 1.3141
+
+[node name="CSGBox10" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.61051, 6 )
+height = 1.22102
+
+[node name="CSGBox11" parent="NavigationMeshInstance" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.693317, -12 )
+height = 1.38663
+
+[node name="Waves" type="Node" parent="."]
+
+[node name="Wave" parent="Waves" instance=ExtResource( 2 )]

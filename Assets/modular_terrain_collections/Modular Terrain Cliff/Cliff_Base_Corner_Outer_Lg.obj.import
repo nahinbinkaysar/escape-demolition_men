@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cliff_Base_Corner_Outer_Lg.obj-384c38f006778340b30179c04636ccad.mesh"
+
+[deps]
+
+files=[ "res://.import/Cliff_Base_Corner_Outer_Lg.obj-384c38f006778340b30179c04636ccad.mesh" ]
+
+source_file="res://Assets/modular_terrain_collections/Modular Terrain Cliff/Cliff_Base_Corner_Outer_Lg.obj"
+dest_files=[ "res://.import/Cliff_Base_Corner_Outer_Lg.obj-384c38f006778340b30179c04636ccad.mesh", "res://.import/Cliff_Base_Corner_Outer_Lg.obj-384c38f006778340b30179c04636ccad.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
