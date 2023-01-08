@@ -1,15 +1,15 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://addons/scatter/src/core/modifier_stack.gd" type="Script" id=1]
-[ext_resource path="res://addons/scatter/src/core/scatter_item.gd" type="Script" id=2]
+[ext_resource path="res://Addons/scatter/src/core/modifier_stack.gd" type="Script" id=1]
+[ext_resource path="res://Addons/scatter/src/core/scatter_item.gd" type="Script" id=2]
 [ext_resource path="res://Spawning/Wave.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Level/LevelGenerator/Ground.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Level/LevelGenerator/Obstacle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Level/LevelGenerator/NavigationMap.gd" type="Script" id=6]
-[ext_resource path="res://addons/scatter/demos/assets/grass/data/m_grass_59.tres" type="Material" id=7]
-[ext_resource path="res://addons/scatter/demos/assets/grass/data/m_grass_52.tres" type="Material" id=8]
-[ext_resource path="res://addons/scatter/src/core/scatter.gd" type="Script" id=9]
-[ext_resource path="res://addons/scatter/demos/assets/lighting/lighting.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Addons/scatter/demos/assets/grass/data/m_grass_59.tres" type="Material" id=7]
+[ext_resource path="res://Addons/scatter/demos/assets/grass/data/m_grass_52.tres" type="Material" id=8]
+[ext_resource path="res://Addons/scatter/src/core/scatter.gd" type="Script" id=9]
+[ext_resource path="res://Addons/scatter/demos/assets/lighting/lighting.tscn" type="PackedScene" id=10]
 
 [sub_resource type="NavigationMesh" id=1]
 vertices = PoolVector3Array( -0.2, 0.4, -10.4, -10.4, 0.4, -10.4, -10.4, 0.4, -0.2, -0.2, 0.4, 10.3, 10.3, 0.4, 10.3, 10.3, 0.4, -0.2, -10.4, 0.4, -0.2, -10.4, 0.4, 10.3, -0.2, 0.4, 10.3, 10.3, 0.4, -0.2, 10.3, 0.4, -10.4, -0.2, 0.4, -10.4 )

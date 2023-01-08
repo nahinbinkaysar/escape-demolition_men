@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://addons/scatter/src/tools/modifier_stack_inspector_plugin/ui/modifier_panel.gd" type="Script" id=1]
-[ext_resource path="res://addons/scatter/icons/right.svg" type="Texture" id=2]
-[ext_resource path="res://addons/scatter/icons/up.svg" type="Texture" id=3]
-[ext_resource path="res://addons/scatter/src/tools/modifier_stack_inspector_plugin/ui/toggle_button.gd" type="Script" id=4]
-[ext_resource path="res://addons/scatter/icons/close.svg" type="Texture" id=5]
-[ext_resource path="res://addons/scatter/icons/down.svg" type="Texture" id=6]
-[ext_resource path="res://addons/scatter/icons/enabled.svg" type="Texture" id=7]
-[ext_resource path="res://addons/scatter/icons/disabled.svg" type="Texture" id=8]
-[ext_resource path="res://addons/scatter/icons/warning.svg" type="Texture" id=9]
+[ext_resource path="res://Addons/scatter/src/tools/modifier_stack_inspector_plugin/ui/modifier_panel.gd" type="Script" id=1]
+[ext_resource path="res://Addons/scatter/icons/right.svg" type="Texture" id=2]
+[ext_resource path="res://Addons/scatter/icons/up.svg" type="Texture" id=3]
+[ext_resource path="res://Addons/scatter/src/tools/modifier_stack_inspector_plugin/ui/toggle_button.gd" type="Script" id=4]
+[ext_resource path="res://Addons/scatter/icons/close.svg" type="Texture" id=5]
+[ext_resource path="res://Addons/scatter/icons/down.svg" type="Texture" id=6]
+[ext_resource path="res://Addons/scatter/icons/enabled.svg" type="Texture" id=7]
+[ext_resource path="res://Addons/scatter/icons/disabled.svg" type="Texture" id=8]
+[ext_resource path="res://Addons/scatter/icons/warning.svg" type="Texture" id=9]
 
 [node name="ModifierPanel" type="Control"]
 anchor_right = 1.0

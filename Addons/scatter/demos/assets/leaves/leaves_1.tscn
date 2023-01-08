@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://addons/scatter/demos/assets/leaves/data/leaves_1.glb" type="PackedScene" id=1]
-[ext_resource path="res://addons/scatter/demos/assets/leaves/data/m_leaves.tres" type="Material" id=2]
+[ext_resource path="res://Addons/scatter/demos/assets/leaves/data/leaves_1.glb" type="PackedScene" id=1]
+[ext_resource path="res://Addons/scatter/demos/assets/leaves/data/m_leaves.tres" type="Material" id=2]
 
 [node name="leaves_1" instance=ExtResource( 1 )]
 

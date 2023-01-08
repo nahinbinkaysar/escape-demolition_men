@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://addons/zylann.hterrain/tools/texture_editor/texture_list_item.gd" type="Script" id=2]
+[ext_resource path="res://Addons/zylann.hterrain/tools/texture_editor/texture_list_item.gd" type="Script" id=2]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 content_margin_left = 2.0

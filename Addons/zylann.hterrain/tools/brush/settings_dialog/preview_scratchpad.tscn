@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://addons/zylann.hterrain/tools/brush/settings_dialog/preview_scratchpad.gd" type="Script" id=1]
-[ext_resource path="res://addons/zylann.hterrain/tools/brush/settings_dialog/preview_painter.gd" type="Script" id=2]
+[ext_resource path="res://Addons/zylann.hterrain/tools/brush/settings_dialog/preview_scratchpad.gd" type="Script" id=1]
+[ext_resource path="res://Addons/zylann.hterrain/tools/brush/settings_dialog/preview_painter.gd" type="Script" id=2]
 
 [node name="PreviewScratchpad" type="Control"]
 margin_right = 380.0

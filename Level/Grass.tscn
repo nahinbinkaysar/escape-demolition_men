@@ -1,11 +1,11 @@
 [gd_scene load_steps=39 format=2]
 
-[ext_resource path="res://addons/scatter/src/core/scatter_item.gd" type="Script" id=1]
+[ext_resource path="res://Addons/scatter/src/core/scatter_item.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Grass_distance_culling.gd" type="Script" id=2]
 [ext_resource path="res://Prefabs/grass_triangle.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/grass_triangle.obj" type="ArrayMesh" id=5]
 [ext_resource path="res://Assets/Shaders/grass_shadermaterial.tres" type="Material" id=6]
-[ext_resource path="res://addons/scatter/src/core/scatter.gd" type="Script" id=7]
+[ext_resource path="res://Addons/scatter/src/core/scatter.gd" type="Script" id=7]
 
 [sub_resource type="Curve3D" id=4]
 _data = {

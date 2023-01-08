@@ -6,7 +6,7 @@
 [ext_resource path="res://Drops/Dropper.gd" type="Script" id=4]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Spawning/Spawner.gd" type="Script" id=6]
-[ext_resource path="res://addons/scatter/demos/assets/lighting/lighting.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Addons/scatter/demos/assets/lighting/lighting.tscn" type="PackedScene" id=7]
 [ext_resource path="res://codes/camera_script.gd" type="Script" id=8]
 [ext_resource path="res://Level/LevelGenerator/GeneratedLevels/New Level6.tscn" type="PackedScene" id=9]
 [ext_resource path="res://HUD/hud_theme.tres" type="Theme" id=10]

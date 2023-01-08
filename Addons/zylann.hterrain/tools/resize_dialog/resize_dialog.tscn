@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://addons/zylann.hterrain/tools/resize_dialog/resize_dialog.gd" type="Script" id=1]
-[ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_heightmap_unmask.svg" type="Texture" id=2]
-[ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_long_arrow_right.svg" type="Texture" id=3]
-[ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_long_arrow_down.svg" type="Texture" id=4]
-[ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_small_circle.svg" type="Texture" id=5]
-[ext_resource path="res://addons/zylann.hterrain/tools/util/dialog_fitter.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Addons/zylann.hterrain/tools/resize_dialog/resize_dialog.gd" type="Script" id=1]
+[ext_resource path="res://Addons/zylann.hterrain/tools/icons/icon_heightmap_unmask.svg" type="Texture" id=2]
+[ext_resource path="res://Addons/zylann.hterrain/tools/icons/icon_long_arrow_right.svg" type="Texture" id=3]
+[ext_resource path="res://Addons/zylann.hterrain/tools/icons/icon_long_arrow_down.svg" type="Texture" id=4]
+[ext_resource path="res://Addons/zylann.hterrain/tools/icons/icon_small_circle.svg" type="Texture" id=5]
+[ext_resource path="res://Addons/zylann.hterrain/tools/util/dialog_fitter.tscn" type="PackedScene" id=6]
 
 [node name="ResizeDialog" type="WindowDialog"]
 margin_left = 130.0
